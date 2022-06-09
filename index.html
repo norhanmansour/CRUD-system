@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="container w-75 m-auto p-3  ">
+
+        <h2>Bookmarker</h2>
+
+        <input id="searchInput" onkeyup="searchInput(this.value)" class="form-control" type="text" placeholder="Search By Site Name....">
+        <hr>
+        <div class="bg-light p-3 text-center">
+            <h3>Bookmark your favorite sites</h3>
+            <label class="mb-2 fw-bold" for="siteName">Site Name</label>
+            <input class="form-control  w-75 mx-auto mb-3" type="text" placeholder="Bookmark Name" id="siteName">
+            <div id="alertName" class="alert  w-75 mx-auto p-2  text-start text-black alert-danger d-none ">Write full site Name,, only letters..</div>
+            <label class="mb-2 fw-bold " for="siteURL">Site URL</label>
+            <input class="form-control mb-3 w-75 mx-auto" type="text" placeholder="Website URL" id="siteURL">
+            <div id="alertUrl" class="alert  w-75 mx-auto p-2  text-start text-black alert-danger d-none">write the proper URL with https..</div>
+            <button disabled id="submitBtn" class="btn btn-primary px-4  mx-auto mb-5">Submit</button>
+        </div>
+        <hr>
+
+
+        <table id="createTable" class="table table-striped">
+
+        </table>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
